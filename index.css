@@ -1,0 +1,166 @@
+body{
+	margin: 0;
+	font-size: 14px;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    min-width: 320px;
+}
+header{
+	width: 100%;
+}
+.header_form_img{
+	width: 108px;
+	height: auto;
+}
+.header_form{
+	padding: 0 5%;
+	display: flex;
+	align-items:center; 
+	position: relative;
+}
+.header_title:before{
+    border-left: 2px solid #000;
+    height: 24px;
+    content: " ";
+    margin-left: -3px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.header_title{
+	position: relative;
+	float: left;
+}
+.header_logo{
+	padding: 13px 0px 16px 18px;
+    float: left;
+    height: 100%;
+    margin-top: 1px;
+    width: 137px;
+    outline-offset: -2px;
+}
+.header_logo:hover{
+	border-bottom:0px;
+}
+.header_title_link{
+	margin-left: 17px;
+	font-size: 19px;
+    position: relative;
+    font-weight: 600;
+    width: auto;
+    white-space: nowrap;
+}
+a:link, a:focus, a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+	border-bottom:2px solid ;
+	cursor: pointer;
+}
+@media screen and (min-width: 860px){
+.header_menu {
+	float: left;
+	position: relative;
+	display: block;
+}}
+.header_menu_list{
+	text-align: center;
+}
+.header_menu_list li{
+	display:inline-block;
+	margin-right: 25px;
+	margin-top: 2px;
+}
+.header_link:after{
+	font-family: "MWF-MDL2";
+    content: "˅";
+    position: absolute;
+    font-size: 13px;
+    display: inline-block;
+    color: currentColor;
+    padding-top: 2px;
+}
+.header_actions{
+	display: flex;
+    align-items:center; 	
+	justify-content: flex-end;
+	flex: 1;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
+button{
+    background-color: transparent;
+    border: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.header_actions_cart, .header_actions_search, .header_actions_signin{
+    display: flex;
+    align-items:center;
+}
+.header_actions_signin_img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-image: url('signin.svg');
+}
+@media only screen and (max-width: 1400px){
+    .header_actions_names{
+        display: none;
+    }
+}
+#more, .header_sidebar{
+    display: none;
+}
+@media only screen and (max-width: 1200px){
+    #more{
+       display: inline-block !important; 
+    }
+    #shopnow{
+       display: none;
+    }
+    #support{
+       display: none;
+    }
+}
+@media only screen and (max-width: 1070px){
+    #accessories{
+        display: none;
+    }
+}
+@media only screen and (max-width: 950px){
+    #compforbus{
+        display: none;
+    }
+}
+@media all and (max-width: 800px){
+    .header_menu{
+        display: none !important;
+    }
+    .header_title{
+        display: none;
+    }
+    #allmicrosoft{
+        display: none;
+    }
+    .header_sidebar{
+        display: inline-block;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .header_form{
+        border-bottom: 1px solid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding: 10px 2% 10px 2%;
+    }
+    .header_actions{
+        justify-content: space-between;
+    }
+    .header_logo{
+        position: absolute;
+        left: 40%;
+        top:0px;
+    }
+}
